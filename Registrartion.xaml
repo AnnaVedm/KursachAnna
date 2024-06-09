@@ -1,0 +1,68 @@
+﻿<Window x:Class="KursachAnna.Registrartion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KursachAnna"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="Registrartion" Height="450" Width="380">
+    <Border Background="#E8E6B6">
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="АВТОРИЗАЦИЯ" Style="{StaticResource textblock}"
+                           FontSize="30" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <StackPanel Grid.Row="1" Orientation="Vertical" Grid.Column="1">
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Никнейм" Style="{StaticResource textblock}"
+                                   FontSize="20" Margin="19 20 0 5"/>
+                        <TextBox Margin="20 0 0 0" Height="30" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Пароль" Style="{StaticResource textblock}"
+                                   FontSize="20" Margin="19 20 0 5"/>
+                        <TextBox Margin="20 0 0 0" Height="30" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20 30 0 0" HorizontalAlignment="Center">
+                        <Button Content="Войти" Style="{StaticResource buttoncorner}"
+                                Background="White" FontWeight="Bold"
+                                Width="80" Height="30" FontSize="15" Margin="0 0 10 0"/>
+
+                        <Button Content="Войти как гость" Style="{StaticResource buttoncorner}"
+                                Background="White" FontWeight="Bold" Margin="10 0 0 0"
+                                Width="130" Height="30" FontSize="15"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0 20 0 0">
+                        <Button Background="Transparent" Content="Регистрация"
+                                FontSize="15"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+
+            <Image Source="/image/horse-bottom.png" Grid.Row="2"/>
+        </Grid>
+
+    </Border>
+</Window>
