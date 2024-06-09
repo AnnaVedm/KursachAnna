@@ -14,26 +14,22 @@ using System.Windows.Shapes;
 
 namespace KursachAnna
 {
-    public partial class Registrartion : Window
+    /// <summary>
+    /// Логика взаимодействия для Registr.xaml
+    /// </summary>
+    public partial class Registr : Window
     {
-        public Registrartion()
+        public Registr()
         {
             InitializeComponent();
         }
-
-        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
-        }
-
-        private void Exit(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

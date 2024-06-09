@@ -12,21 +12,40 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
-            
+
+            <!-- Первый кнопка с изображением и текстом -->
             <Button Grid.Column="0" Background="Transparent">
-                <StackPanel>
-                    <Image Source="/image/ForVsadnik.jpg" Height="516" Width="480" RenderTransformOrigin="0.557,0.549" />
-                </StackPanel>
+                <Grid>
+                    <Image Source="/image/ForVsadnik.jpg" 
+                           Height="516" 
+                           Width="480" 
+                           RenderTransformOrigin="0.557,0.549" />
+                    <TextBlock Text="Для всадника" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center" 
+                               Foreground="White" 
+                               FontSize="35" 
+                               FontWeight="Bold" 
+                               Background="Black" 
+                               Opacity="0.8"
+                               FontFamily="Oswald"/>
+                </Grid>
             </Button>
 
+            <!-- Вторая кнопка с изображением и текстом -->
             <Button Grid.Column="1" Background="Transparent">
-                <StackPanel>
+                <Grid>
                     <Image Source="/image/Forhorse.jpg" Height="459" Width="474" />
-                </StackPanel>
+                    <TextBlock Text="Для лошади"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center" 
+                               Foreground="White" 
+                               FontSize="35" 
+                               FontWeight="Bold" 
+                               Background="Black"
+                               Opacity="0.8"/>
+                </Grid>
             </Button>
-
-           
         </Grid>
     </Border>
 </UserControl>

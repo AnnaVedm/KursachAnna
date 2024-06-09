@@ -9,6 +9,7 @@
         Background="Transparent"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
         Loaded="Window_Loaded"
         WindowStyle="None">
     <Border Background="#E8E6B6">
@@ -25,14 +26,25 @@
             </Grid.RowDefinitions>
 
             <ContentControl Grid.Row="1" Grid.Column="1">
-                <local:menu/>
+                <local:korzina/>
             </ContentControl>
-            
+
             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal"
                         Grid.ColumnSpan="2">
                 <Image Source="/image/Логотип.png"  Width="400" Height="150"
                        Margin="0 -50 0 0"/>
-                
+            </StackPanel>
+            <StackPanel Grid.Row="2"
+                        Grid.Column="1" Margin="559,10,46,10">
+                <Border Background="Transparent" CornerRadius="10" Width="172">
+                    <Button Width="168"
+                        Height="29">
+                        <TextBlock Text="Корзина" 
+                               Width="67"
+                               FontWeight="ExtraBold"
+                               FontSize="15"/>
+                    </Button>
+                </Border>
             </StackPanel>
         </Grid>
     </Border>

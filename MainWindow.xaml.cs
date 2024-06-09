@@ -25,22 +25,22 @@ namespace KursachAnna
             InitializeComponent();
 
         }
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
 
-      
-            // Создаем и показываем модальное окно регистрации после загрузки главного окна
-            private void Window_Loaded(object sender, RoutedEventArgs e)
-            {
-                // Создаем окно регистрации
-                 Registrartion registrationWindow = new Registrartion();
+        // Создаем и показываем модальное окно регистрации после загрузки главного окна
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Создаем окно регистрации
+            Registrartion registrationWindow = new Registrartion();
 
-                // Устанавливаем владельца
-                registrationWindow.Owner = this;
+            // Устанавливаем владельца
+            registrationWindow.Owner = this;
 
-                // Делаем окно модальным и отображаем его
-                registrationWindow.ShowDialog();
-            }
-        
-
-       
+            // Делаем окно модальным и отображаем его
+            registrationWindow.ShowDialog();
+        }
     }
 }
