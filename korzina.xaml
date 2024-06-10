@@ -7,7 +7,9 @@
              mc:Ignorable="d" 
              Background="Transparent"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border Background="Black">
+    <Border Background="Black"
+            BorderBrush="Black"
+            BorderThickness="15">
         <Grid ShowGridLines="True"
             Background="#E8E6B6">
             <Grid.ColumnDefinitions>
@@ -34,12 +36,12 @@
             </StackPanel>
             <StackPanel Grid.Row="3"
                         Grid.Column="1">
-                <Button Width="100"
-                        Height="25"
+                <Button Width="125"
+                        Height="30"
                         Margin="15"
                         HorizontalAlignment="Left">
                     <TextBlock Text="Назад"
-                               FontSize="15"
+                               FontSize="20"
                                FontWeight="ExtraBold"/>
                 </Button>
             </StackPanel>

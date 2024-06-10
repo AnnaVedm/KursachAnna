@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursachAnna"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="650" Width="1000"
         Background="Transparent"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
@@ -26,31 +26,76 @@
             </Grid.RowDefinitions>
 
             <ContentControl Grid.Row="1" Grid.Column="1">
-                <local:korzina/>
+                <local:menu/>
             </ContentControl>
 
-            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal"
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1" 
+                        Orientation="Horizontal" 
                         Grid.ColumnSpan="2">
-                <Image Source="/image/Логотип.png"  Width="400" Height="150"
+                <Image Source="/image/Логотип.png" 
+                       Width="400" 
+                       Height="150" 
                        Margin="0 -50 0 0"/>
+
             </StackPanel>
-            <StackPanel Grid.Row="2"
-                        Grid.Column="1" Margin="559,10,46,10">
-                <Border Background="Transparent" CornerRadius="10" Width="172">
-                    <Button Width="168"
-                        Height="29">
+
+            <Border Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="10,10,626,103" RenderTransformOrigin="-0.537,-0.295">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="Конный магазин"
+                           FontSize="22"
+                           FontWeight="ExtraBold"/>
+                </StackPanel>
+            </Border>
+
+            <StackPanel Grid.Row="2" 
+                        Grid.Column="1" 
+                        Margin="750,10,46,10">
+                <Border Background="Transparent" 
+                        CornerRadius="10" 
+                        Width="172">
+                    <Button Width="168" 
+                            Height="40">
                         <TextBlock Text="Корзина" 
-                               Width="67"
-                               FontWeight="ExtraBold"
-                               FontSize="15"/>
+                                   Width="100" 
+                                   FontWeight="ExtraBold"
+                                   FontSize="22"/>
                     </Button>
                 </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1" 
+                        Background="Transparent" 
+                        Margin="330,-25,256,0">
+                <TextBlock Text="ДОСТАВКА по всей России Звонить по телефону: +791155535"
+                           TextWrapping="Wrap" 
+                           HorizontalAlignment="Center"
+                           FontSize="20" 
+                           Margin="50 60" 
+                           FontWeight="Bold"
+                           Height="117" 
+                           Width="268"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1" 
+                        Margin="667,1,1,2" 
+                        Orientation="Horizontal">
+                <Button HorizontalAlignment="Center" 
+                        Height="40" 
+                        Width="168" 
+                        Margin="25">
+                    <TextBlock Text="Войти" 
+                               FontSize="22" 
+                               FontWeight="ExtraBold"/>
+                </Button>
+                <Image Source="/image/Exit.png" Width="38" 
+                       Height="39" 
+                       MouseLeftButtonUp="Image_MouseLeftButtonUp"/>
             </StackPanel>
         </Grid>
     </Border>
 </Window>
-
-
-<!-- Margin="207,-100,167,69"
-                        Orientation="Horizontal"  Height="256" Width="364"
-                        Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="2"-->

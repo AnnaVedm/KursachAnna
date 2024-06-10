@@ -29,6 +29,10 @@ namespace KursachAnna
         {
             DragMove();
         }
+        private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            // Код для выхода
+        }
 
         // Создаем и показываем модальное окно регистрации после загрузки главного окна
         private void Window_Loaded(object sender, RoutedEventArgs e)

@@ -68,6 +68,11 @@
                         <Button Content="Войти как гость" Width="130" Height="30" VerticalAlignment="Top"
                                 Margin="0 10 0 0"/>
                     </Border>
+                    <StackPanel Margin="0 60 0 0" Width="102"
+                                Grid.ColumnSpan="2">
+                        <Button Background="Transparent" Content="Регистрация"  Style="{StaticResource buttoncorner}"
+                                FontSize="15" Width="100"/>
+                    </StackPanel>
                 </Grid>
 
 
