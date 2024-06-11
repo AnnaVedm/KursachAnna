@@ -46,5 +46,16 @@ namespace KursachAnna
             // Делаем окно модальным и отображаем его
             registrationWindow.ShowDialog();
         }
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            SignInButton.Visibility = Visibility.Collapsed;
+            SignOutButton.Visibility = Visibility.Visible;
+        }
+
+        private void SignOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            SignInButton.Visibility = Visibility.Visible;
+            SignOutButton.Visibility = Visibility.Collapsed;
+        }
     }
 }

@@ -37,14 +37,13 @@
                        Width="400" 
                        Height="150" 
                        Margin="0 -50 0 0"/>
-
             </StackPanel>
 
             <Border Grid.Row="0"
                         Grid.Column="1"
                         Margin="10,10,626,103" RenderTransformOrigin="-0.537,-0.295">
-            <StackPanel HorizontalAlignment="Center">
-                <TextBlock Text="Конный магазин"
+                <StackPanel HorizontalAlignment="Center">
+                    <TextBlock Text="Конный магазин"
                            FontSize="22"
                            FontWeight="ExtraBold"/>
                 </StackPanel>
@@ -70,7 +69,7 @@
                         Grid.Column="1" 
                         Background="Transparent" 
                         Margin="330,-25,256,0">
-                <TextBlock Text="ДОСТАВКА по всей России Звонить по телефону: +791155535"
+                <TextBlock Text="ДОСТАВКА по всей России Звонить по телефону: +79115553535"
                            TextWrapping="Wrap" 
                            HorizontalAlignment="Center"
                            FontSize="20" 
@@ -84,17 +83,47 @@
                         Grid.Column="1" 
                         Margin="667,1,1,2" 
                         Orientation="Horizontal">
-                <Button HorizontalAlignment="Center" 
-                        Height="40" 
-                        Width="168" 
-                        Margin="25">
-                    <TextBlock Text="Войти" 
+                <Canvas>
+                    <Button HorizontalAlignment="Center" 
+                            x:Name="SignInButton"
+                            Height="40" 
+                            Width="168" 
+                            Margin="25 50 0 0"
+                            Click="SignInButton_Click">
+                        <TextBlock Text="Войти" 
+                        FontSize="22" 
+                        FontWeight="ExtraBold"/>
+                    </Button>
+                    <Button HorizontalAlignment="Center" 
+                            x:Name="SignOutButton"
+                            Height="40" 
+                            Width="168"
+                            Margin="25"
+                            Click="SignOutButton_Click"
+                            Visibility="Collapsed">
+                        <TextBlock Text="Выйти"
                                FontSize="22" 
                                FontWeight="ExtraBold"/>
-                </Button>
-                <Image Source="/image/Exit.png" Width="38" 
-                       Height="39" 
-                       MouseLeftButtonUp="Image_MouseLeftButtonUp"/>
+                    </Button>
+                </Canvas>
+                <StackPanel Orientation="Horizontal"
+                            Margin="220 0 0 0"
+                            Height="100"
+                            Grid.Row="0"
+                            Grid.Column="2">
+                    <Button Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Padding="0"
+                        Width="40"
+                        Height="40"
+                        Margin="0">
+                        <Image Source="/image/Exit.png" 
+                           Width="38" 
+                           Height="60" 
+                           MouseLeftButtonUp="Image_MouseLeftButtonUp" RenderTransformOrigin="0.598,0.697"/>
+                    </Button>
+                </StackPanel>
             </StackPanel>
         </Grid>
     </Border>
