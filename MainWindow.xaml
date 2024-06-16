@@ -68,15 +68,15 @@
             <StackPanel Grid.Row="0" 
                         Grid.Column="1" 
                         Background="Transparent" 
-                        Margin="330,-25,256,0">
-                <TextBlock Text="ДОСТАВКА по всей России Звонить по телефону: +79115553535"
+                        Margin="330,-43,256,0">
+                <TextBlock Text="ДОСТАВКА по всей России Звонить по телефону: +79115553535 Email:EquineExcel@gmail.com"
                            TextWrapping="Wrap" 
                            HorizontalAlignment="Center"
                            FontSize="20" 
                            Margin="50 60" 
                            FontWeight="Bold"
-                           Height="117" 
-                           Width="268"/>
+                           Height="130" 
+                           Width="290"/>
             </StackPanel>
 
             <StackPanel Grid.Row="0" 
@@ -124,6 +124,25 @@
                            MouseLeftButtonUp="Image_MouseLeftButtonUp" RenderTransformOrigin="0.598,0.697"/>
                     </Button>
                 </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="2"
+                        Grid.Column="1"
+                        Orientation="Horizontal"
+                        Margin="10,0,390,0" Height="67" VerticalAlignment="Bottom">
+                <TextBlock FontSize="13"
+                           FontWeight="Bold"
+                            Text="© Конный магазин Excellence Equine, 2024 Все для лошади и всадника.
+Конный спорт и верховая езда. В Санкт-Петербурге, Москве, Ростове-на-Дону и по всей России!"
+                           TextWrapping="Wrap" Height="40" Width="601" RenderTransformOrigin="0.5,0.5">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-0.79"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-0.786"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
             </StackPanel>
         </Grid>
     </Border>
